@@ -76,7 +76,7 @@ Development Environment
 Building LLVM
 =============
 ## using CMake (cmake-gui) Generate Visual Studio 2019 Project
-![CMakeGui](.\CMakeGui.png)
+![CMakeGui](https://github.com/Amoystyle/LLVM-VS/blob/master/CMakeGui.png)
 
 设置以下几个值：
 | Name                  | Vaule                   |
@@ -414,7 +414,7 @@ Debugging a Simple out-of-tree LLVM Pass
 打开llvm-tutor.sln项目, 配置HelloWorld为**设为启动项目**
 
 ### 配置HelloWorld属性：
-![HelloWorld](.\HelloWorld.png)
+![HelloWorld](https://github.com/Amoystyle/LLVM-VS/blob/master/HelloWorld.png)
 
 设置以下几个值：
 | Name     | Vaule                                                                                   |
@@ -424,7 +424,7 @@ Debugging a Simple out-of-tree LLVM Pass
 
 ### 启动调试
 
-![HelloWorld](.\HelloWorldDebuging.png)
+![HelloWorld](https://github.com/Amoystyle/LLVM-VS/blob/master/HelloWorldDebuging.png)
 
 Common Problems
 ==========
