@@ -424,7 +424,7 @@ Debugging a Simple out-of-tree LLVM Pass
 
 ### 启动调试
 
-![HelloWorld](https://github.com/Amoystyle/LLVM-VS/blob/master/HelloWorldDebuging.png)
+![HelloWorldDebuging](https://github.com/Amoystyle/LLVM-VS/blob/master/HelloWorldDebuging.png)
 
 Common Problems
 ==========
@@ -432,4 +432,4 @@ Common Problems
   * clang-objc-fuzzer失败提示DummyClangFuzzer.o外部连接无法连接LLVMFuzzerInitialize符号, 在ClangObjectiveCFuzzer.cpp添加`extern "C" int LLVMFuzzerInitialize(int *argc, char ***argv) { return 0; }`
   * Hikari在llvm 10上FunctionCallObfuscate不兼容,目前没详细看,编译是过不了的.
 
-## 有问题可以关注下我的[Github](https://github.com/Amoystyle)
+## 有问题可以关注下我的[Github](https://github.com/Amoystyle/LLVM-VS)
