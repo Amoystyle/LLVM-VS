@@ -417,10 +417,10 @@ Debugging a Simple out-of-tree LLVM Pass
 ![HelloWorld](https://github.com/Amoystyle/LLVM-VS/blob/master/HelloWorld.png)
 
 设置以下几个值：
-| Name     | Vaule                                                                                   |
-| -------- | :-------------------------------------------------------------------------------------- |
-| 命令     | $LLVM_DIR\bin\opt.exe                                                                   |
-| 命令参数 | -load-pass-plugin HelloWorld.dll -passes=hello-world -disable-output input_for_hello.ll |
+| Name     | Vaule                                                                                         |
+| -------- | :-------------------------------------------------------------------------------------------- |
+| 命令     | $LLVM_DIR\bin\opt.exe                                                                         |
+| 命令参数 | -load-pass-plugin HelloWorld.dll -passes=hello-world -S input_for_hello.ll -o output_hello.ll |
 
 ### 启动调试
 
