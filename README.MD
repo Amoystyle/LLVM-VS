@@ -426,6 +426,27 @@ Debugging a Simple out-of-tree LLVM Pass
 
 ![HelloWorldDebuging](https://github.com/Amoystyle/LLVM-VS/blob/master/HelloWorldDebuging.png)
 
+### 生成HelloWorld.o：
+Visual Studio 2019下需要使用`clang-cl.exe`来编译连接.
+```bash
+# Generate an LLVM test file
+$LLVM_DIR/bin/clang.exe -S -emit-llvm input_for_hello.c -o input_for_hello.ll
+
+$LLVM_DIR/bin/opt.exe -load-pass-plugin HelloWorld.dll -passes=hello-world -S input_for_hello.ll -o output_hello.ll
+
+# 方法一
+# Generate an LLVM o file
+$LLVM_DIR/bin/bin/llc.exe output_hello.ll -o output_hello.s
+$LLVM_DIR/bin/bin/clang-cl.exe /c output_hello.s -o output_hello.o
+
+# 方法二
+# Generate an LLVM o file
+$LLVM_DIR/bin/clang-cl.exe /c output_hello.ll -o output_hello.o
+
+# 详情参考
+$LLVM_DIR/bin/clang-cl.exe -v hello.c -o hello.exe
+```
+
 Common Problems
 ==========
   * JsonTest.cpp得转换成UTF8-BOM编码格式
