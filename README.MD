@@ -429,19 +429,23 @@ Debugging a Simple out-of-tree LLVM Pass
 ### 生成HelloWorld.o：
 Visual Studio 2019下需要使用`clang-cl.exe`来编译连接.
 ```bash
-# Generate an LLVM test file
-$LLVM_DIR/bin/clang.exe -S -emit-llvm input_for_hello.c -o input_for_hello.ll
+# Generate an LLVM IR file
+$LLVM_DIR/bin/clang-cl.exe -Xclang -emit-llvm -c input_for_hello.c -o input_for_hello.ll
 
+# HelloWorld pass Processing an LLVM IR file
 $LLVM_DIR/bin/opt.exe -load-pass-plugin HelloWorld.dll -passes=hello-world -S input_for_hello.ll -o output_hello.ll
 
 # 方法一
-# Generate an LLVM o file
+# Generate an LLVM obj file
 $LLVM_DIR/bin/bin/llc.exe output_hello.ll -o output_hello.s
 $LLVM_DIR/bin/bin/clang-cl.exe /c output_hello.s -o output_hello.o
 
 # 方法二
-# Generate an LLVM o file
-$LLVM_DIR/bin/clang-cl.exe /c output_hello.ll -o output_hello.o
+# Generate an LLVM obj file
+$LLVM_DIR/bin/clang-cl.exe -c output_hello.ll -o output_hello.o
+
+# Generate an LLVM exe file
+$LLVM_DIR/bin/clang-cl.exe output_hello.ll -o output_hello.exe
 
 # 详情参考
 $LLVM_DIR/bin/clang-cl.exe -v hello.c -o hello.exe
