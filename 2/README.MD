@@ -604,11 +604,11 @@ $LLVM_DIR/bin/clang-cl.exe -### hello.c -o hello.exe
 ```
 
 ### 原
-![HelloWorldDebuging](https://github.com/Amoystyle/LLVM-VS/blob/master/HelloWorldDebuging.png)
+![output_hello1](https://github.com/Amoystyle/LLVM-VS/blob/master/2/1.png)
 
 ### 改
-![output_hello2](https://github.com/Amoystyle/LLVM-VS/blob/master/HelloWorldDebuging.png)
-![output_hello2.1](https://github.com/Amoystyle/LLVM-VS/blob/master/HelloWorldDebuging.png)
+![output_hello2](https://github.com/Amoystyle/LLVM-VS/blob/master/2/2.png)
+![output_hello2.1](https://github.com/Amoystyle/LLVM-VS/blob/master/2/2.1.png)
 
 End
 ==========
