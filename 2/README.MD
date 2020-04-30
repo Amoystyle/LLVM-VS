@@ -272,7 +272,7 @@ if.end:                                           ; preds = %for.end, %entry
 }
 ```
 
-看着是不是很头疼，没事儿，如果你把上面的必备知识都仔细看过，还是能找到入手的地方(`IRBuilder源码`)，LLVM大部分使用`IRBuilder`的来生成`IR代码`，所以参照`IRBuilder源码`可以一葫芦画瓢。
+看着是不是很头疼，没事儿，如果你把上面的必备知识都仔细看过，还是能找到入手的地方(`IRBuilder源码`)，LLVM大部分使用`IRBuilder`的来生成`IR代码`，所以参照`IRBuilder源码`可以依葫芦画瓢。
 
 ```C
 Function *createDecodeFunc(Module &M)
@@ -572,7 +572,7 @@ Using the StringObfuscator LLVM Pass Processing IR
 =============
 ### 生成HelloWorld.o
 
-Visual Studio 2019下需要使用`clang-cl.exe`来编译连接.
+Visual Studio 2019下需要使用`clang-cl.exe`来编译链接.
 
 ```bash
 # Generate an LLVM IR file
