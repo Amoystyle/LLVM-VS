@@ -25,7 +25,7 @@ Command Line Options
 
 clang-cl
 ========
-`Visual Studio 2019下使用clang-cl.exe来编译连接`.
+`Visual Studio 2019下使用clang-cl.exe来编译链接`.
 
 `clang-cl`是基于`clang`的扩展, 旨在兼容`Visual C++编译器cl.exe`, 帮你关联头文件和库文件.
 
@@ -565,7 +565,7 @@ struct StringObfuscatorModPass : public PassInfoMixin<StringObfuscatorModPass>
 
 ```
 
-至此，整个`StringObfuscator LLVM Pass·总算是成型了，千里之行始于足下。
+至此，整个`StringObfuscator LLVM Pass`总算是成型了，千里之行始于足下。
 
 
 Using the StringObfuscator LLVM Pass Processing IR
